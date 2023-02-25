@@ -47,26 +47,24 @@ h1,h2,h3,h4,h5,h6 {
 .main__images{
     height: 100vh;
 }
-.intro__button{
-    text-decoration: none;
-    color: rgb(0, 0, 0);
-    font-size: 40px;
-    border: #969696 3px solid;
-    border-radius: 15px;
-    padding: 3px 15px;
-}
-.intro__button a:hover{
-    font-size: 45px;
-}
 .main__button{
     text-decoration: none;
-    color: rgb(0, 0, 0);
-    font-size: 20px;
-    border: #969696 3px solid;
-    border-radius: 15px;
-    padding: 3px 15px;
-    transition-duration: .1s;
+    color: black;
+    transition: .3s;
+}
+.main__button::after{ 
+    opacity: 0;
 }
 .main__button:hover{
-    font-size: 25px;
+    color: #2e2e2e;
+}
+.main__button:hover::after {
+    content: "";
+    display: block;
+    color: #2e2e2e;
+    margin:  3px auto 0;
+    width: 80px;
+    height: 2px;
+    opacity: 1;
+    background-color: #2e2e2e;
 }
